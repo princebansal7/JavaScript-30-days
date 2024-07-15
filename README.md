@@ -1,8 +1,8 @@
 # JavaScript Basic to Advanced
 
-- Day-1 (Variables)
-- Day-2 (Operators)
-- Day-3 (Conditional statements)
+- Day-1 [Variables](https://github.com/princebansal7/JavaScript-30-days/tree/main/Day-1)
+- Day-2 [Operators](https://github.com/princebansal7/JavaScript-30-days/tree/main/Day-2)
+- Day-3 [Conditional statements](https://github.com/princebansal7/JavaScript-30-days/tree/main/Day-3)
 - Day-4 
 - Day-5 
 - Day-6 
