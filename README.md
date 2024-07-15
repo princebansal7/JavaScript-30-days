@@ -1,4 +1,4 @@
-# JavaScript Basics to Advanced
+# JavaScript Basic to Advanced
 
 - Day-1 (Variables)
 - Day-2 (Operators)
