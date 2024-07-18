@@ -5,7 +5,7 @@
 - Day-3 | [Conditional statements](https://github.com/princebansal7/JavaScript-30-days/tree/main/Day-3)
 - Day-4 | [Loops basics](https://github.com/princebansal7/JavaScript-30-days/tree/main/Day-4)
 - Day-5 | [Function Types](https://github.com/princebansal7/JavaScript-30-days/tree/main/Day-5)
-- Day-6 | 
+- Day-6 | [Arrays](https://github.com/princebansal7/JavaScript-30-days/tree/main/Day-6)
 - Day-7 | 
 - Day-8 | 
 - Day-9 | 
