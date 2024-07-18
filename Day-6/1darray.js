@@ -18,9 +18,11 @@ arr.sort((a, b) => b - a); // sorts the array (decreasing order)
 console.log(arr);
 arr.reverse(); // reverses the array
 console.log(arr);
+arr.fill(69); // fills array with provided input
+console.log(arr);
 
 // es6 methods (Array Helpers)-----------
-arr = [1, 2, 3, 4, 5, 6, 7, 7, 8, 9];
+arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 // map() => return new array after doing after some manipulations with old array elements
 const doubledArr = arr.map(val => {
