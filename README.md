@@ -1,4 +1,4 @@
-# JavaScript Basic to Advanced
+# JavaScript Basic to Advance
 
 - Day-01 | [Variables](https://github.com/princebansal7/JavaScript-30-days/blob/main/Day-01/variables.js)
 - Day-02 | [Operators](https://github.com/princebansal7/JavaScript-30-days/tree/main/Day-02)
