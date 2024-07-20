@@ -7,7 +7,7 @@
 - Day-05 | [Function Types](https://github.com/princebansal7/JavaScript-30-days/tree/main/Day-05)
 - Day-06 | [Arrays](https://github.com/princebansal7/JavaScript-30-days/tree/main/Day-06)
 - Day-07 | [Objects](https://github.com/princebansal7/JavaScript-30-days/blob/main/Day-07/objects.js)
-- Day-08 | [ES6](https://github.com/princebansal7/JavaScript-30-days/blob/main/Day-08/es6.js)
+- Day-08 | [ES6 Basics](https://github.com/princebansal7/JavaScript-30-days/blob/main/Day-08/es6.js)
 - Day-09 | 
 - Day-10 | 
 - Day-11 | 
