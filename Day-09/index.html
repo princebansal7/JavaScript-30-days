@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DOM</title>
+        <style></style>
+    </head>
+    <style>
+        .oldClass {
+            background-color: aquamarine;
+        }
+        .newClass {
+            color: red;
+        }
+    </style>
+    <body>
+        <h1 id="initial">Initial State</h1>
+        <div class="heading">Prince Bansal</div>
+        <div id="content">Test test test test text</div>
+        <div id="remove">Test test test test - 2 [Will be removed]</div>
+        <p>My GitHub: <a id="myLink">princebansal7</a></p>
+        <ul id="list">
+            <li>Text-1</li>
+            <li>Text-2</li>
+            <li>Text-3</li>
+        </ul>
+        <br />
+        <div id="add-class">Class Will be added to this element</div>
+        <div id="remove-class" class="oldClass">
+            Class Will be removed to this element
+        </div>
+        <button onclick="changeStyle()">Change Style</button>
+        <br />
+        <button onclick="addNewBodyElement()">Add New Body Element</button>
+        <br />
+        <button onclick="addListItem()">Add List Item</button>
+        <br />
+        <button onclick="removeItem()">Remove Item</button>
+        <br />
+        <button onclick="removeListItem()">Remove last list Item</button>
+        <br />
+        <button onclick="addingAttribute()">
+            Add link attribute to GitHub
+        </button>
+        <br />
+        <button onclick="addingClass()">Add Class</button>
+        <br />
+        <button onclick="removeClass()">Remove Class</button>
+        <br />
+
+        <script>
+            function extra() {
+                document.getElementById("initial").innerHTML = "Final State";
+                document.getElementById("initial").style.color = "purple";
+            }
+            function changeStyle() {
+                extra();
+                // changing styles
+                document.getElementsByClassName("heading")[0].style.color =
+                    "red";
+                document.getElementById("content").style.backgroundColor =
+                    "yellow";
+            }
+            function addNewBodyElement() {
+                extra();
+                // creating new element div
+                const element = document.createElement("div");
+                // adding some text
+                element.innerText = "New Content added";
+                // appending this new element to body
+                document.body.appendChild(element);
+            }
+            function addListItem() {
+                extra();
+                //  adding new list element to existing list
+                const newLi = document.createElement("li");
+                newLi.innerText = "New list added";
+                document.getElementById("list").appendChild(newLi);
+            }
+            function removeItem() {
+                extra();
+                // Removing elements
+                document.getElementById("remove").remove();
+            }
+            function removeListItem() {
+                extra();
+                const list = document.getElementById("list");
+                list.removeChild(list.lastElementChild);
+            }
+            function addingAttribute() {
+                extra();
+                const link = document.getElementById("myLink");
+                link.setAttribute("href", "https://github.com/princebansal7");
+            }
+            function addingClass() {
+                extra();
+                document.getElementById("add-class").classList.add("newClass");
+            }
+            function removeClass() {
+                extra();
+                document
+                    .getElementById("remove-class")
+                    .classList.remove("oldClass");
+            }
+        </script>
+    </body>
+</html>
