@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event-Handling</title>
+        <style>
+            #content-with-bg {
+                background-color: rgb(7, 7, 4);
+                color: rgb(255, 249, 83);
+            }
+            #keyup-output {
+                padding: 20px;
+                border-color: aliceblue;
+                border: solid 2px#9ee08d;
+                margin-right: 50vi;
+            }
+        </style>
+    </head>
+    <body style="background-color: #201e1e; color: antiquewhite">
+        <p id="para">This Text will be Changed</p>
+        <button id="para-btn">Change Text</button>
+        <br />
+        <br />
+        <img
+            class="nature-img"
+            src="https://cdn.pixabay.com/photo/2013/08/26/09/40/silhouette-175970_1280.jpg"
+            alt="light"
+            height="150px"
+            width="200px"
+        />
+        <br /><br />
+        <div id="content-with-bg">
+            This is a paragraph with Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Aspernatur id non, temporibus consequatur repellat
+            eum nihil corrupti! Consequuntur, at ipsa. Dolorum tenetur pariatur
+            adipisci labore obcaecati iure perspiciatis debitis veniam laborum
+            ducimus. Rerum, cupiditate. Dicta blanditiis eligendi beatae
+            tempore. Ab.
+        </div>
+        <br /><br />
+        <input type="text" id="keydown-input" placeholder="Key Down" />
+        <div id="keydown-output"></div>
+        <br /><br />
+        <input type="text" id="keyup-input" placeholder="Key Up" />
+        <p id="keyup-output"></p>
+
+        <script>
+            function changeText() {
+                const btn_element = document.querySelector("#para-btn");
+                btn_element.addEventListener("click", () => {
+                    const para = document.querySelector("#para");
+                    para.innerHTML = "Prince Bansal";
+                    para.style.color = "white";
+                });
+            }
+            function toggleOpacity() {
+                const img = document.querySelector(".nature-img");
+                img.addEventListener("dblclick", () => {
+                    const opacity = img.style.opacity;
+                    console.log(opacity);
+                    if (opacity == 1) {
+                        img.style.opacity = 0.4;
+                    } else {
+                        img.style.opacity = 1;
+                    }
+                });
+            }
+            function mouseOverEvent() {
+                const div = document.querySelector("#content-with-bg");
+                div.addEventListener("mouseover", () => {
+                    div.style.backgroundColor = "red";
+                });
+            }
+            function mouseOutEvent() {
+                const div = document.querySelector("#content-with-bg");
+                div.addEventListener("mouseout", () => {
+                    div.style.backgroundColor = "rgb(7, 7, 4)";
+                });
+            }
+
+            function keyDownEvent() {
+                const input = document.getElementById("keydown-input");
+                input.addEventListener("keydown", event => {
+                    console.log(event.code);
+                    document.getElementById("keydown-output").innerText =
+                        event.code;
+                });
+            }
+            function keyUpEvent() {
+                const input = document.getElementById("keyup-input");
+                input.addEventListener("keyup", event => {
+                    console.log(event.code);
+                    document.getElementById("keyup-output").innerText =
+                        event.target.value;
+                });
+            }
+            changeText();
+            toggleOpacity();
+            mouseOverEvent();
+            mouseOutEvent();
+            keyDownEvent();
+            keyUpEvent();
+        </script>
+    </body>
+</html>
