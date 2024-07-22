@@ -35,7 +35,7 @@ console.log(...numbers);
 const mixed = [...numbers, ...colors];
 console.log(mixed);
 
-// spread operator
+// rest operator
 function getSumUptoN(...nums) {
     return nums.reduce((accumulator, num) => accumulator + num, 0);
 }
