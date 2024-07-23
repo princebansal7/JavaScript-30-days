@@ -10,7 +10,7 @@
 - Day-08 | [ES6 Basics](https://github.com/princebansal7/JavaScript-30-days/blob/main/Day-08/es6.js)
 - Day-09 | [DOM Manipulation](https://github.com/princebansal7/JavaScript-30-days/blob/main/Day-09/dom-manipulation.html)
 - Day-10 | [Event Handling](https://github.com/princebansal7/JavaScript-30-days/blob/main/Day-10/event-handling.html)
-- Day-11 | 
+- Day-11 | [Promises](https://github.com/princebansal7/JavaScript-30-days/blob/main/Day-11/asynchronous.js)
 - Day-12 | 
 - Day-13 | 
 - Day-14 | 
