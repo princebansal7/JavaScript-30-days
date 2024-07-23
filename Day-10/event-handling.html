@@ -7,7 +7,7 @@
                 background-color: rgb(7, 7, 4);
                 color: rgb(255, 249, 83);
             }
-            #keyup-output {
+            .para-style {
                 padding: 20px;
                 border-color: aliceblue;
                 border: solid 2px#9ee08d;
@@ -41,7 +41,36 @@
         <div id="keydown-output"></div>
         <br /><br />
         <input type="text" id="keyup-input" placeholder="Key Up" />
-        <p id="keyup-output"></p>
+        <p id="keyup-output" class="para-style"></p>
+        <br /><br />
+        <form id="form-data">
+            <input type="text" name="username" placeholder="Username" />
+            <br />
+            <input
+                type="text"
+                name="email"
+                placeholder="email@gmail.com"
+            /><br />
+            <button type="submit">Submit</button>
+        </form>
+        <br /><br />
+        <select id="dropdown">
+            <option value="val-1">Hello Value-1</option>
+            <option value="val-2">Hello Value-2</option>
+            <option value="val-3">Hello Value-3</option>
+            <option value="val-4">Hello Value-4</option>
+        </select>
+        <p id="selected-value" class="para-style"></p>
+        <br /><br />
+        <ul id="item-list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <br /><br />
+        <div id="parent-element">
+            <button id="add-child">Add Child Element</button>
+        </div>
 
         <script>
             function changeText() {
@@ -52,6 +81,7 @@
                     para.style.color = "white";
                 });
             }
+
             function toggleOpacity() {
                 const img = document.querySelector(".nature-img");
                 img.addEventListener("dblclick", () => {
@@ -64,12 +94,14 @@
                     }
                 });
             }
+
             function mouseOverEvent() {
                 const div = document.querySelector("#content-with-bg");
                 div.addEventListener("mouseover", () => {
                     div.style.backgroundColor = "red";
                 });
             }
+
             function mouseOutEvent() {
                 const div = document.querySelector("#content-with-bg");
                 div.addEventListener("mouseout", () => {
@@ -85,6 +117,7 @@
                         event.code;
                 });
             }
+
             function keyUpEvent() {
                 const input = document.getElementById("keyup-input");
                 input.addEventListener("keyup", event => {
@@ -93,12 +126,72 @@
                         event.target.value;
                 });
             }
+
+            function formDataToConsole() {
+                const form = document.getElementById("form-data");
+                form.addEventListener("submit", event => {
+                    event.preventDefault();
+                    const formData = new FormData(event.target);
+                    formData.forEach((value, key) => {
+                        console.log(`${key}:${value}`);
+                    });
+                });
+            }
+
+            function dropDownToPara() {
+                const dropdown = document.getElementById("dropdown");
+                dropdown.addEventListener("change", event => {
+                    const p = document.getElementById("selected-value");
+                    // p.innerText = `Selected value is: ${event.target.value}`; // shows attribute value's value
+
+                    const selectedText =
+                        event.target.selectedOptions[0].textContent;
+                    p.innerText = `Selected value: ${selectedText}`;
+                });
+            }
+
+            function clickItemEventDelegation() {
+                const ul = document.getElementById("item-list");
+                ul.addEventListener("click", event => {
+                    if (event.target.tagName === "LI") {
+                        console.log(
+                            `Clicked item: ${event.target.textContent}`
+                        );
+                    }
+                });
+            }
+
+            function parentChildEventDelegation() {
+                const parentElement = document.getElementById("parent-element");
+
+                parentElement.addEventListener("click", function (event) {
+                    if (event.target.classList.contains("child-element")) {
+                        console.log(
+                            `Clicked child element: ${event.target.textContent}`
+                        );
+                    }
+                });
+
+                document
+                    .getElementById("add-child")
+                    .addEventListener("click", function () {
+                        const newChild = document.createElement("div");
+                        newChild.classList.add("child-element");
+                        newChild.textContent = `Child Element ${parentElement.children.length}`;
+                        parentElement.appendChild(newChild);
+                    });
+            }
+
             changeText();
             toggleOpacity();
             mouseOverEvent();
             mouseOutEvent();
             keyDownEvent();
             keyUpEvent();
+            formDataToConsole();
+            dropDownToPara();
+            clickItemEventDelegation();
+            parentChildEventDelegation();
         </script>
     </body>
 </html>
