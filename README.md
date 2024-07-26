@@ -12,7 +12,7 @@
 - Day-10 | [Event Handling](https://github.com/princebansal7/JavaScript-30-days/blob/main/Day-10/event-handling.html)
 - Day-11 | [Promises](https://github.com/princebansal7/JavaScript-30-days/blob/main/Day-11/asynchronous.js)
 - Day-12 | [Error Handling](https://github.com/princebansal7/JavaScript-30-days/blob/main/Day-12/errorHandling.js)
-- Day-13 | 
+- Day-13 | [Modules](https://github.com/princebansal7/JavaScript-30-days/tree/main/Day-13)
 - Day-14 | 
 - Day-15 | 
 - Day-16 | 
