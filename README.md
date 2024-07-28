@@ -13,9 +13,9 @@
 - Day-11 | [Promises](https://github.com/princebansal7/JavaScript-30-days/blob/main/Day-11/asynchronous.js)
 - Day-12 | [Error Handling](https://github.com/princebansal7/JavaScript-30-days/blob/main/Day-12/errorHandling.js)
 - Day-13 | [Modules](https://github.com/princebansal7/JavaScript-30-days/tree/main/Day-13)
-- Day-14 | 
-- Day-15 | 
-- Day-16 | 
+- Day-14 | [Classes](https://github.com/princebansal7/JavaScript-30-days/tree/main/Day-14)
+- Day-15 | [Closure](https://github.com/princebansal7/JavaScript-30-days/blob/main/Day-15/01.closure.js)
+- Day-16 | [Recursion](https://github.com/princebansal7/JavaScript-30-days/blob/main/Day-16/recursion.js)
 - Day-17 | 
 - Day-18 | 
 - Day-19 | 
