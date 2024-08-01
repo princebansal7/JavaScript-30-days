@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SessionStorage Task 2</title>
+        <script>
+            // Save an object to sessionStorage
+            const myObject = { name: "Jane Doe", age: 25 };
+            sessionStorage.setItem("myObject", JSON.stringify(myObject));
+
+            // Retrieve and parse the object from sessionStorage
+            const retrievedObject = JSON.parse(
+                sessionStorage.getItem("myObject")
+            );
+            console.log(retrievedObject); // Logs: { name: 'Jane Doe', age: 25 }
+        </script>
+    </head>
+    <body></body>
+</html>

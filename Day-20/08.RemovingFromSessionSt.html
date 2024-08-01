@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SessionStorage Task 4</title>
+        <script>
+            // Log sessionStorage content before removal
+            console.log("Before removal:", sessionStorage.getItem("myString"));
+
+            // Remove item from sessionStorage
+            sessionStorage.removeItem("myString");
+
+            // Log sessionStorage content after removal
+            console.log("After removal:", sessionStorage.getItem("myString")); // Logs: null
+        </script>
+    </head>
+    <body></body>
+</html>
