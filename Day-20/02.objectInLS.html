@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LocalStorage Task 2</title>
+        <script>
+            // Save an object to localStorage
+            const myObject = { name: "John Doe", age: 30 };
+            localStorage.setItem("myObject", JSON.stringify(myObject));
+
+            // Retrieve and parse the object from localStorage
+            const retrievedObject = JSON.parse(
+                localStorage.getItem("myObject")
+            );
+            console.log(retrievedObject); // Logs: { name: 'John Doe', age: 30 }
+        </script>
+    </head>
+    <body></body>
+</html>
