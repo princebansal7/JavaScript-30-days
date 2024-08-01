@@ -19,7 +19,7 @@
 - Day-17 | [Data Structures](https://github.com/princebansal7/JavaScript-30-days/tree/main/Day-17)
 - Day-18 | [Algorithms](https://github.com/princebansal7/JavaScript-30-days/tree/main/Day-18)
 - Day-19 | [Regular Expressions](https://github.com/princebansal7/JavaScript-30-days/blob/main/Day-19/regularExpressions.js)
-- Day-20 | 
+- Day-20 | [Local & Session Storage](https://github.com/princebansal7/JavaScript-30-days/tree/main/Day-20)
 - Day-21 | 
 - Day-22 | 
 - Day-23 | 
