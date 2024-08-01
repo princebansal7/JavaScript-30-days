@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Clear Storage Task</title>
+        <script>
+            function clearAllStorages() {
+                // Clear all data from localStorage
+                localStorage.clear();
+
+                // Clear all data from sessionStorage
+                sessionStorage.clear();
+
+                // Verify that both storages are empty
+                console.log("localStorage:", localStorage); // Logs: Storage {length: 0}
+                console.log("sessionStorage:", sessionStorage); // Logs: Storage {length: 0}
+            }
+
+            // Adding some test data to localStorage and sessionStorage
+            function addTestData() {
+                localStorage.setItem("testKeyLocal", "testValueLocal");
+                sessionStorage.setItem("testKeySession", "testValueSession");
+            }
+
+            // Display the storage contents before and after clearing
+            document.addEventListener("DOMContentLoaded", () => {
+                addTestData();
+
+                console.log("Before clearing localStorage:", localStorage);
+                console.log("Before clearing sessionStorage:", sessionStorage);
+
+                clearAllStorages();
+            });
+        </script>
+    </head>
+    <body></body>
+</html>
